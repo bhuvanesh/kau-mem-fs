@@ -16,6 +16,7 @@ export default async (req, res) => {
       res.status(200).json({ id });
     }
   } catch (e) {
+    console.log('db not connected')
     res.status(400).end();
   }
 }
